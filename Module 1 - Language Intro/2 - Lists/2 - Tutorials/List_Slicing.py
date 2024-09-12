@@ -6,16 +6,24 @@ list_one = [5, 10, 15, 20, 25, 30]
 # For the first task, copy list_one into List_one_copy
 # Remember, to access elements in a list, use brackets
 # at the end of the list's name: list_one[!!here!!]
-list_one_copy = None
+list_one_copy = []
+for x in list_one:
+    list_one_copy.append(x)
 
 # Now use a print statement to check your work!
-# # Code Here # #
+print(list_one_copy)
 
 # Now, select all numbers greater than 10 from list_one!
-over_10 = None
+over_10 = []
+for x in list_one_copy:
+    if x > 10:
+        over_10.append(x)
+
+
 
 # Now use a print statement to check your work!
 # # Code Here # #
+print(over_10)
 
 # Next, store all the numbers less than 20 in under_20.
 # Recall that when using a colon, the number on the right when

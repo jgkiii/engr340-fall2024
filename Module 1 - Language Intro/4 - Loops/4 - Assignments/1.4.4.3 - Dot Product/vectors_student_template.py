@@ -1,7 +1,6 @@
 import random
 import numpy as np
 
-
 # copy in Dr. Forsyth's random list function for use
 def generate_random_int_list(list_length, upper_bound):
     # given the length above, sample the Natural Numbers up to upper_bound that many times
@@ -28,6 +27,11 @@ Step 2: Iterate through the vector(s) and calculate the dot product
 dot_product = 0
 
 ### Your code here
+
+y = 0
+for x in vector_a:
+    dot_product += x * vector_b[y]
+    y += 1
 
 """
 Step 3: Calculate the error of your dot_product compared with numpy's solution
