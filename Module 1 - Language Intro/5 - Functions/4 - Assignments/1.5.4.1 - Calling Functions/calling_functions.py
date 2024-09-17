@@ -6,7 +6,7 @@ mu = 1
 std = 1.2
 
 # Step 1: Set the number of samples you wish to take. This value is selected by you.
-num_samples = 000000000
+num_samples = 5000000
 
 # Step 2: use normal to generate distribution samples
 samples = np.random.normal(loc=mu, scale=std, size=num_samples)
@@ -23,7 +23,7 @@ print("mu=", measured_mean, "stdev=", measured_deviation)
 mean_error = abs(mu - measured_mean)
 deviation_error = abs(std - measured_deviation)
 
-if measured_mean < 1E-3 and deviation_error < 1E-3:
+if mean_error < 1E-3 and deviation_error < 1E-3:
     print('Solution within error tolerances')
 else:
     print('Solution is not within error tolerances')
